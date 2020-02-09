@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rellaytop"
+    android:padding="15dp"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+   >
+
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/lin111">
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Class: "
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/black" />
+    <TextView
+        android:id="@+id/Class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Marshmallow"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/black" />
+</LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/lin111">
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Class"
+        android:layout_marginTop="5dp"
+        android:text="Subject: "
+        android:textStyle="bold"
+        android:textColor="@android:color/black" />
+    <TextView
+        android:id="@+id/Subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Class"
+        android:layout_marginTop="5dp"
+        android:text="Android 6.0"
+        android:textColor="@android:color/black" />
+</LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/item_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@android:drawable/ic_dialog_info" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+   android:layout_below="@id/lin222"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:visibility="invisible"
+            android:text="Id: "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtId"
+            android:textColor="@android:color/black"
+            android:visibility="invisible"
+            android:text="sklddl"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="false"
+android:id="@+id/lin222"
+
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        >
+
+        <TextView
+            android:id="@+id/Date_Head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Date: "
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/LastDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23"
+            android:textAppearance="?android:attr/textAppearanceButton"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</RelativeLayout>
+

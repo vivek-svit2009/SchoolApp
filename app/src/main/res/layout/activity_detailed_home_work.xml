@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailedHomeWork"
+    android:id="@+id/rellay"
+    android:background="@drawable/backimg"
+    android:padding="15dp">
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/rellay1">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lay1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtcl"
+                android:textStyle="bold"
+                android:text="Class: "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:id="@+id/txtClass"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lay1"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtsub"
+                android:text="Subject: "
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:id="@+id/txtSubject"/>
+        </LinearLayout>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/lay2"
+          android:layout_alignParentRight="true"
+          >
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/txtldate"
+              android:textStyle="bold"
+              android:text="Last Date: "/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+
+              android:id="@+id/txtlastDate"/>
+      </LinearLayout>
+  </RelativeLayout>
+    <ScrollView
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+        android:layout_below="@id/rellay1"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="15dp"
+       >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description/Detail"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="@color/colorAccent"
+
+            />
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:id="@+id/laylinbb"
+           android:layout_marginTop="10dp">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/txt2"
+               android:lineSpacingExtra="3dp"
+               android:justificationMode="inter_word"
+              />
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:scaleType="center"
+               android:id="@+id/imgView11"/>
+
+
+       </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

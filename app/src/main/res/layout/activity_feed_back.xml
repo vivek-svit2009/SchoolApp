@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:paddingBottom="16dp"
+    android:background="@drawable/backimg"
+    tools:context=".FeedBack">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="FEEDBACK"
+        android:textScaleX="1.5"
+        android:id="@+id/tcFeedback"
+       android:textDirection="firstStrongRtl"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <View
+        android:layout_width="fill_parent"
+        android:id="@+id/viewline1"
+        android:layout_below="@id/tcFeedback"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff" />
+<LinearLayout
+    android:layout_below="@id/viewline1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="we hope you enjoyed our application services today."
+        android:textSize="20sp"
+        android:textStyle="italic"/>
+
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:numStars="5"
+        android:layout_marginTop="10dp"
+        android:stepSize="1"
+        android:rating="5"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tvRatingScale"
+        android:text="Awesome. I Love It."
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:id="@+id/etFeedback"
+        android:layout_marginTop="10dp"
+        android:hint="Tell Us What You Loved"
+        android:gravity="top" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Feedback"
+        android:id="@+id/btnSubmit"
+        android:layout_marginTop="15dp"
+        android:background="#e57373"
+        android:textColor="@color/white" />
+
+</LinearLayout>
+
+</RelativeLayout>
