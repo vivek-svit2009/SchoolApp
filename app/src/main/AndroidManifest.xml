@@ -14,14 +14,11 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".newDashboard">
-
-        </activity>
+        <activity android:name=".Profile"></activity>
+        <activity android:name=".newDashboard"></activity>
         <activity
             android:name=".CalenderViewExample"
-            android:theme="@style/AppTheme.DarkActionBar">
-
-        </activity>
+            android:theme="@style/AppTheme.DarkActionBar"></activity>
         <activity android:name=".RecyclerViewPage" />
         <activity
             android:name=".FeedBack"
