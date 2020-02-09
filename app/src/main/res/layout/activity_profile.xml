@@ -1,9 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backimg"
     tools:context=".Profile">
+    <RelativeLayout
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:scaleType="centerCrop"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/abc10"
+                android:layout_gravity="center"
+                android:layout_width="90dp"
+                android:layout_height="90dp" />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vivek Kumar Sharma"/>
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/abc1"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+            <TextView
+
+                android:layout_gravity="center"
+                android:text="Shri Vishakarma Inter College"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
